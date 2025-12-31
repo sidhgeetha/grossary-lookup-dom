@@ -1,6 +1,6 @@
-# JavaScript DOM Manipulation to Submit Form Details
+# JavaScript DOM Manipulation wth different DOM elements
 
-## Task
+
 - Basic dom operation using different elements
 - getElementById
 - getElementByClassname
