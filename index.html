@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+
+  
+
+</head>
+<body>
+
+  <header class="bg-black flex justify-between items-center px-4 py-3 md:px-8 lg:px-12 w-full fixed top-0 left-0 z-50">
+    <!-- logo left -->
+     <!-- change font size with sm:, md:, lg:. -->
+
+    <div class="text-white">
+      <div class="font-sans text-xl font-extrabold md:text-2xl lg:text-3xl">logo </div>
+    </div>
+
+    
+
+    <!-- nav links -->
+     <!-- hidden md:flex hide for mobile and flex for md, lg screens -->
+
+    <nav class=" hidden text-white md:flex text-sm md:text-base lg:text-lg items-center justify-between space-x-6 p-4">
+
+     <a href="#" >Home</a>
+     <a href="#" >About</a>
+     <a href="#" >Services</a>
+     <a href="#" >Contact</a>
+
+    <a href="#" class="text-black bg-white px-4 py-2 rounded hover:bg-gray-200 font-medium">Login</a>
+
+    </nav>
+
+    <div class="md:hidden ">
+
+    
+
+    <input type="checkbox" id="menuToggle" class="peer hidden" >
+
+    <!-- mobiel hamburger menu for to show links on mobile screen -->
+     <!-- md:hidden only t hide icon on md + screen size -->
+
+     <label for="menuToggle" class=" cursor-pointer flex items-center justify-center relative z-50">
+      
+    <!-- peer-checked:hidden → hamburger icon disappears-->
+     <!-- peer-checked:block → close icon appears -->
+      <!-- peer-checked:flex → mobile menu appears -->
+
+    <svg class="block w-6 h-6 text-white peer-checked:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+
+     <!-- Close Icon -->
+     <svg class="hidden peer-checked:block   w-6 h-6 text-white " fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+  </svg>
+
+    
+
+   
+   </label>
+
+   
+
+    
+
+
+  
+
+   <!-- Mobile Menu -->
+<nav class="hidden peer-checked:flex flex-col absolute justify-center text-center top-full left-0 w-full bg-black text-white space-y-4 p-4 md:hidden">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+  <a href="#" class="text-black bg-white px-4 py-2 rounded hover:bg-gray-200 font-medium mx-auto">Login</a>
+</nav>
+
+</div>
+
+  </header>
+
+
+  <main class="my-5 pt-30">
+  
+     <h1 class="text-3xl font-bold mb-6 text-center">
+     Lookup grossary
+      </h1>
+
+      <div class="flex justify-start gap-4 ml-16">
+
+        <button id="showVeg" class="px-4 py-2 bg-green-800 text-white rounded">Vegtables</button>
+
+        <button id="showFruit" class="px-4 py-2 bg-red-500 text-white rounded" >Fruits</button>
+
+        <button id="showGreen" class="px-4 py-2 bg-teal-500 text-white rounded">Greens</button>
+
+         <button id="showAll" class="px-4 py-2 bg-gray-700 text-white rounded">
+      Show All
+    </button>
+    </div>
+
+   
+    <!-- gris to show gorssary items -->
+
+<div class="main-container flex gap-6 h-screen p-6 ml-6" >
+
+  <div class="flex-2  p-4">
+
+    <div class="grid grid-cols-4 gap-6">
+
+      <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer">
+
+        <img src="assets/images/carrot_7963710.png" class="mx-auto mb-2 h-16 w-16 " />
+        <p class="font-medium  mt-6">Carrot</p>
+
+      </div>
+
+      <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer"  >
+
+        <img src="assets/images/tomato.png" class="mx-auto mb-2  h-16 w-16" />
+        <p class="font-medium mt-6">Tomato</p>
+
+      </div>
+
+       <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer" >
+
+        <img src="assets/images/strawberry_19024878.png" class="mx-auto mb-2 h-16 w-16" />
+        <p class="font-medium mt-6">Strawberry</p>
+
+      </div>
+
+       <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer">
+
+        <img src="assets/images/orange.png" class="mx-auto mb-2  h-16 w-16" />
+        <p class="font-medium mt-6">Orange</p>
+
+      </div>
+      <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer">
+
+        <img src="assets/images/orange.png" class="mx-auto mb-2  h-16 w-16" />
+        <p class="font-medium mt-6">Orange</p>
+
+      </div>
+      <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer">
+
+        <img src="assets/images/orange.png" class="mx-auto mb-2  h-16 w-16" />
+        <p class="font-medium mt-6">Orange</p>
+
+      </div>
+      <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer">
+
+        <img src="assets/images/orange.png" class="mx-auto mb-2  h-16 w-16" />
+        <p class="font-medium mt-6">Orange</p>
+
+      </div>
+      <div class="vegtables border rounded-md p-4 flex flex-col h-50 w-50 items-center justify-center cursor-pointer">
+
+        <img src="assets/images/orange.png" class="mx-auto mb-2  h-16 w-16" />
+        <p class="font-medium mt-6">Orange</p>
+
+      </div>
+      
+      
+
+    </div>
+
+  </div>
+
+     <!-- Selected Items -->
+  <div class="flex-1 border border-gray-300 p-4 text-center" >
+    <h3 class="text-xl font-semibold mt-2">
+      Selected Items
+    </h3>
+    <ul id="selectedList" class="list pl-6 text-gray-700"> </ul>
+  </div>
+
+</div>
+
+     <!-- <div id="mealData" class="text-lg space-y-4 p-4"></div> -->
+             <!-- craetign table to display form data -->
+
+
+
+
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+  </body>
+  </html>
